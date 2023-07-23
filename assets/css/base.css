@@ -1,0 +1,61 @@
+:root {
+    --primary-color: #fe0;
+    --word-color: #0b0d21;
+    --bg-color: #fdf0df;
+}
+
+.section-heading.lv1 {
+    color: var(--word-color);
+    font-size: 6.2rem;
+    font-weight: 800;
+    line-height: 1.06;
+}
+
+.section-heading.lv2 {
+    color: var(--word-color);
+    font-size: 4.2rem;
+    font-weight: 800;
+    line-height: 1.23;
+}
+
+.section-heading.lv3 {
+    color: var(--word-color);
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.45;
+}
+
+.section-heading.lv4 {
+    color: var(--word-color);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.section-heading.lv5 {
+    color: var(--word-color);
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.55;
+}
+
+.section-desc.lv1 {
+    color: var(--word-color);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.55;
+}
+
+.section-desc.lv2 {
+    color: var(--word-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.62;
+}
+
+.section-desc.lv1 {
+    color: var(--word-color);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.71;
+}
