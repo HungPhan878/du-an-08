@@ -53,9 +53,38 @@
     line-height: 1.62;
 }
 
-.section-desc.lv1 {
+.section-desc.lv3 {
     color: var(--word-color);
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.71;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    --height: 58px;
+
+    min-width: 120px;
+    height: var(--height);
+    line-height: var(--height);
+    border-radius: 8px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    background: var(--word-color);
+    color: #fff;
+    text-align: center;
+}
+
+.btn:hover {
+    opacity: 0.9;
 }
