@@ -1,0 +1,15 @@
+/* pc */
+@media screen and (min-width: 62em) {
+}
+
+/* mobile and tablet */
+@media screen and (max-width: 62.9375em) {
+}
+
+/* tablet */
+@media screen and (min-width: 48em) and (max-width: 62.9375em) {
+}
+
+/* mobile */
+@media screen and (max-width: 47.9375em) {
+}
