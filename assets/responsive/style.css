@@ -1,9 +1,223 @@
 /* pc */
 @media screen and (min-width: 62em) {
+  .hidden-pc {
+    display: none;
+  }
 }
 
 /* mobile and tablet */
 @media screen and (max-width: 62.9375em) {
+  .hidden {
+    display: none;
+  }
+
+  /* menu mobile */
+  .menu-mobile {
+  }
+
+  .menu-overplay {
+  }
+
+  .menu__overplay-input:checked ~ .menu-overplay__label {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .menu__overplay-input:checked ~ .menu-wrap {
+    transform: translateX(0);
+  }
+
+  .menu-overplay {
+  }
+
+  .menu-overplay__label {
+    position: fixed;
+    z-index: 1;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+  }
+
+  .menu-wrap {
+    position: fixed;
+    inset: 0 40% 0 0;
+    z-index: 2;
+    padding: 70px;
+
+    background-color: #fff;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .menu-logo {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+  }
+
+  .menu-logo__label {
+    margin-top: 8px;
+  }
+
+  ul#menu-list {
+    margin-top: 24px;
+  }
+
+  a.header__link {
+    font-size: 2.8rem;
+    display: block;
+  }
+
+  /* hero */
+  section.hero {
+    flex-direction: column;
+  }
+
+  .header__top {
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    align-self: flex-start;
+  }
+
+  .hero__content {
+    width: 100%;
+  }
+
+  .hero__wrap {
+    margin-top: 38px;
+  }
+
+  .hero__images {
+    margin-top: 45px;
+  }
+
+  .hero__img:nth-child(odd) {
+    justify-self: flex-end;
+  }
+
+  .hero__img:nth-child(even) {
+    justify-self: flex-start;
+  }
+
+  .hero__img:nth-child(4) {
+    right: 40px;
+  }
+
+  .hero__inner {
+    right: 164px;
+  }
+
+  /* solution */
+  .solution__item {
+    flex-direction: column-reverse;
+  }
+
+  img.solution__item-img {
+    width: 100%;
+  }
+
+  .course__head {
+    flex-direction: column;
+  }
+
+  .course__bottom {
+    flex-direction: column;
+  }
+
+  /* popular */
+  .popular__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .popular-item__thumb {
+    width: 100%;
+  }
+
+  .solution__item-info {
+    margin-top: 28px;
+    width: 100%;
+  }
+
+  /* course */
+  .course {
+    margin-top: 0;
+    padding: 50px 0;
+  }
+
+  .course__head {
+    align-items: start;
+  }
+
+  p.section-desc.lv1.course__desc {
+    margin-top: 12px;
+  }
+
+  img.course__img {
+    width: 100%;
+  }
+
+  .course__list {
+    margin-top: 28px;
+    justify-content: center;
+  }
+
+  /* popular */
+  .popular {
+    margin-top: 50px;
+  }
+
+  /* feedback */
+  .feedback {
+    margin-top: 0;
+    padding: 70px 0;
+  }
+
+  .feedback__wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .feedback__header {
+    flex-direction: column;
+  }
+
+  .feedback__desc.lv1 {
+    margin-top: 12px;
+  }
+  /* cho hidden moi the con lai chu vi du wrap
+  nhin toan khung canh va console ra ma nhing dung mo mam hay muon luc tu internet */
+
+  /*subscribe  */
+  section.subscribe__header {
+    position: relative;
+    z-index: 1;
+  }
+
+  .subscribe {
+    margin-top: 0px;
+  }
+
+  /* footer */
+  .footer__row {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .footer__top {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .footer__info {
+    margin-top: 0;
+  }
+
+  .footer__phone {
+    margin-top: 24px;
+  }
 }
 
 /* tablet */

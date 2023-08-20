@@ -93,6 +93,7 @@
     <!-- link -->
     <link rel="stylesheet" href="assets/css/base.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/responsive/style.css" />
   </head>
   <body>
     <section class="discount">
@@ -127,7 +128,14 @@
               class="header__logo"
             />
           </div>
-          <ul class="header__list">
+
+          <!-- icon overplay -->
+          <label for="menu-overplay" class="menu__overplay-icon">
+            <img src="./assets/icon/Menu.svg" alt="" class="menu__overplay-icon">
+          </label>
+
+
+          <ul id="header-list" class="header__list hidden">
             <li class="header__item">
               <a href="" class="header__link">Home</a>
             </li>
@@ -144,7 +152,7 @@
               <a href="" class="header__link">Blog</a>
             </li>
           </ul>
-          <a href="#!" class="btn header__btn">Log In</a>
+          <a href="#!" class="btn header__btn hidden">Log In</a>
         </section>
         <!-- hero -->
         <section class="hero">
@@ -239,6 +247,26 @@
       </div>
     </section>
 
+<!-- menu mobile -->
+<div class="menu-mobile hidden-pc">
+  <input type="checkbox" id="menu-overplay" class="menu__overplay-input hidden">
+  <label for="menu-overplay" class="menu-overplay__label"></label>
+  <section class="menu-wrap">
+    <div class="menu-logo">
+      <img src="./assets/icon/logo.svg" alt="" class="menu-logo__icon">
+      <img src="./assets/icon/tutelage.svg" alt="tulelage" class="menu-logo__label">
+    </div>
+    <ul id="menu-list""></ul>
+    <script>
+const menuList = document.querySelector("#menu-list");
+const headerList = document.querySelector("#header-list");
+
+menuList.innerHTML = headerList.innerHTML;
+
+    </script>
+  </section>
+</div>
+
     <!-- main -->
     <main >
 
@@ -254,7 +282,7 @@
               bitter but the fruits are sweet.
             </p>
           </section>
-          <div class="solution__tabs">
+          <div class="solution__tabs hidden">
             <div class="solution__tab active">Recorded Class</div>
             <div class="solution__tab">Live Class</div>
             <div class="solution__tab">Lifetime support</div>
@@ -766,7 +794,7 @@
               </section>
               
               <!-- item 3 -->
-              <section class="feedback-item">
+              <section class="feedback-item hidden">
                 <h3 class="section-heading lv5 feedback-item__title">Great platform</h3>
                 <blockquote class="section-desc lv2 feedback-item__quote">Circuit has helped me expand my knowledge through several important courses that are extremely impactful and helpful for my career. For the first time, finishing my degree seemed realistic. It was online with a flexible schedule</blockquote>
                 <div class="feedback-item__student">
@@ -809,7 +837,7 @@
               </section>
               
               <!-- item 3 -->
-              <section class="feedback-item">
+              <section class="feedback-item hidden">
                 <h3 class="section-heading lv5 feedback-item__title">Great platform</h3>
                 <blockquote class="section-desc lv2 feedback-item__quote">Circuit has helped me expand my knowledge through several important courses that are extremely impactful and helpful for my career. For the first time, finishing my degree seemed realistic. It was online with a flexible schedule</blockquote>
                 <div class="feedback-item__student">
@@ -852,7 +880,7 @@
               </section>
               
               <!-- item 3 -->
-              <section class="feedback-item">
+              <section class="feedback-item hidden">
                 <h3 class="section-heading lv5 feedback-item__title">Great platform</h3>
                 <blockquote class="section-desc lv2 feedback-item__quote">Circuit has helped me expand my knowledge through several important courses that are extremely impactful and helpful for my career. For the first time, finishing my degree seemed realistic. It was online with a flexible schedule</blockquote>
                 <div class="feedback-item__student">
